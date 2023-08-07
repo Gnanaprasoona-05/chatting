@@ -1,0 +1,170 @@
+body{
+    background-color: #4FA3A5;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    
+}
+.registration {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left:0%;
+    padding-right: 20%;
+  }
+.login{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-left: 0%;
+}
+.reg{
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    border-radius: 8px;
+    height: 45px;
+
+  }
+
+  
+  .reg:hover {
+    background-color:black;
+    color: white;
+  }
+
+.reg:active
+{
+    background-color: #4FA3A5;
+}
+.log{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  border-radius: 8px;
+  height: 45px;
+}
+  
+.log:hover {
+  background-color:black;
+  color: white;
+}
+
+.log:active{
+  background-color: #4FA3A5;
+}
+
+.create {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-left:0%;
+  padding-right: 20%;
+}
+.cre{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  border-radius: 8px;
+  height: 45px;
+
+}
+.cre:hover {
+  background-color:black;
+  color: white;
+}
+
+.cre:active
+{
+  background-color: #4FA3A5;
+}
+
+h1{
+  text-align: center;
+
+}
+.form{
+  width: 30rem;
+  margin: auto;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(127, 255, 212, 0.616);
+  box-shadow: 5px 5px 5px whitesmoke;
+  position: relative;
+
+}
+
+input,textarea{
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+  top: 2%;
+}
+
+input:focus{
+  background-color:lightgrey;
+  color: bl;
+  border: 2px solid;
+}
+
+label{
+  font-size: 1.5rem;
+
+}
+
+.division{
+  margin-bottom: 1rem;
+}
+.display{
+  position: absolute;
+  top:35%;
+  padding-left:0%;
+  padding-right: 20%;
+}
+.msg{
+  width:50%;
+  padding-top:100%;
+}
+li{
+  color:red;
+}
+.message-box {
+  background-color: rgba(127, 255, 212, 0.616);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  height:80vh;
+  display:flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: stretch;
+}
+
+.messages {
+  overflow-y: scroll;
+  flex: 1;
+  width: 100%;
+}
+
+.inputs {
+  padding:10px;
+  display: flex;
+
+}
+#message{
+  flex:1 ;
+}

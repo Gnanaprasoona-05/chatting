@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+
+
+    </head>
+    <body>
+        <div class="message-box">
+            <h1>Welcome to the chat Room{{ roomid }}</h1>
+
+            <div class="messages"id="messages"></div>
+
+            <div class="inputs" >
+                    <input type="text" rows="3" placeholder="Enter Your Message" name="message" id="message">
+                    <button type="button" name="send" id="send-btn" onClick="sendMessage()">
+                        Send
+                    </button>
+            </div>
+        </div>
+            
+        
+        <script type="text/javascript">
+            var socketio = io();  
+            
+            const sendMessage = () => {
+                console.log("send");
+            };
+
+        </script>
+    </body>
+
+    
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+
+    </head>
+    <body>
+            <b><h1 class="heading">LOGIN HERE</h1></b>
+        
+            <form class="form" action="/chatting" method="post">
+                <div class="division">
+                    <label for="username">UserName</label>
+                    <input type="text" name="username" id="uname" value="{{ username }}">
+                </div>
+                <div class="division">
+                    <label for="roomid">RoomId</label>
+                    <input type="text" name="roomid" id="RoomId"  value="{{ roomid}}">
+                </div>
+                <br><br>
+                <div>
+                    <input type="submit" value="Submit"  formaction="/chatting" class="reg" name="join">
+                </div> 
+                {% if error %} 
+                <ul>
+                    <li><b>{{error}}</b></li>
+                </ul>
+                {% endif %}
+            </form>
+
+
+    </body>
+</html>

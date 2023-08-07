@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+        <script type="text/javascript" charset="utf-8">
+            var socket = io();
+            socket.on('connect', function() {
+                socket.emit('my event', {data: 'I\'m connected!'});
+            });
+        </script> 
+           
+    </head>
+    <body>
+        <div class="container">
+            <h1>Wanna chat secretly? &#129323;</h1><br><br>
+
+            <form action="/registration" method="post">
+                <div class="registration">
+                    <input type="submit" value="Registration" class="reg" formaction="/registration">
+                </div>
+            </form>
+            
+            <form action="/login" method="post">
+                <div class="Login">
+                    <input type="submit" value="Login" class="log" formaction="/login">
+                </div>
+            </form>
+            <form action="/code" method="post">
+                <div class="create">
+                    <input type="submit" value="CreateRoom" class="cre" formaction="/code" name="create">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Wanna chat secretly? &#129323;</h1><br><br>
+
+            <form action="/registration" method="post">
+                <div class="registration">
+                    <input type="submit" value="Registration" class="reg" formaction="/registration">
+                </div>
+            </form>
+            
+            <form action="/login" method="post">
+                <div class="Login">
+                    <input type="submit" value="Login" class="log" formaction="/login">
+                </div>
+            </form>
+            <form action="/code" method="post">
+                <div class="create">
+                    <input type="submit" value="CreateRoom" class="cre" formaction="/code">
+                </div>
+            </form>
+            <div class="display">
+                <h1 class="display"><b>RoomId:</b>{{ random_code }}</h1>
+            </div>
+        </div>
+    </body>
+</html>
